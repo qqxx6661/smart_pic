@@ -61,9 +61,18 @@ npm run preview
 
 ## 部署选项
 
+### GitHub Pages 自动部署
+
+本项目已配置 GitHub Actions 自动部署到 GitHub Pages：
+
+1. 将代码合并到 `main` 分支
+2. GitHub Actions 会自动构建并部署到 GitHub Pages
+3. 访问地址：`https://qqxx6661.github.io/smart_pic/`
+
+### 其他部署选项
+
 - **Vercel**: 推荐，零配置部署
 - **Netlify**: 简单快速部署
-- **GitHub Pages**: 免费托管选项
 - **阿里云/腾讯云**: 国内用户推荐
 
 ## 浏览器支持
