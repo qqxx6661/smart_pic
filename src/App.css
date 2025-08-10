@@ -1,0 +1,100 @@
+.layout {
+  min-height: 100vh;
+}
+
+.image-editor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.canvas-container {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.toolbar {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+.toolbar-section {
+  margin-bottom: 16px;
+}
+
+.toolbar-section:last-child {
+  margin-bottom: 0;
+}
+
+.canvas-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .ant-layout-content {
+    padding: 16px !important;
+  }
+  
+  .toolbar {
+    padding: 12px;
+  }
+  
+  .canvas-wrapper {
+    min-height: 300px;
+  }
+  
+  .ant-card {
+    margin: 0;
+  }
+}
+
+/* Fabric.js canvas responsive styling */
+.fabric-canvas-container {
+  max-width: 100%;
+  overflow: auto;
+}
+
+/* Custom upload dragger styles */
+.ant-upload-drag:hover {
+  border-color: #40a9ff;
+}
+
+.ant-upload-drag.ant-upload-drag-hover {
+  border-color: #1890ff;
+}
+
+/* Ensure proper spacing */
+.ant-space {
+  width: 100%;
+}
+
+/* Button group styles */
+.button-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .button-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .button-group .ant-btn {
+    width: 100%;
+  }
+}
